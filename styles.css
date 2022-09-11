@@ -1,5 +1,11 @@
 /*"LuffyDrank" Web Developer */
+h1 {
+    margin: 5px;
+}
 
+p {
+    margin: 5px;
+}
 body {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -234,5 +240,34 @@ footer {
         display: flex;
         justify-content: center;
         align-content: center;
+    }
+    #welcome-text {
+    margin: 5px;
+}   
+    #welcome {
+        padding: 150px 0px 0px 0px;
+        flex-direction: column;
+        height: auto;
+    }
+    #welcome-img{
+        width: 80vw;
+        margin: 0px;
+    }
+    .acerca-div {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+    .menu-img {
+        width: 80vw;
+    }
+    .contacto-icons {
+        flex-direction: column;
+    }
+    #map {
+        width: 80vw;
+    }
+    .image-carousel-img {
+        width: 80vw;
     }
 }
