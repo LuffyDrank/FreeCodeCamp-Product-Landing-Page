@@ -26,8 +26,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 45px 20px;
-    height: 50px;
 }
 .nav-right {
     width: 70%;
@@ -63,11 +61,11 @@ body {
     border-radius: 10px;
 }
 #welcome {
-    padding: 150px 0px 100px 0px;
+    padding: 250px 0px 100px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
     height: 100vh;
     background-image: url(./images/burger-unsplashdark.jpg);
@@ -105,6 +103,7 @@ body {
     color: white;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
+    max-width: 75vw;
     width: 1200px;
 }
 #logo {
@@ -129,11 +128,12 @@ body {
 .menu {
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
     background-image:url(./images/table-unplash.jpg);
     background-size: 100% 100%;
 }
 .menu-img {
-    width: 40vw;
+    height: 60vh;
 }
 
 .menu-div {
@@ -183,10 +183,10 @@ body {
     border-radius: 10px;
     color: white;
 }
-
-.image-carousel-img {
+.image-carousel-video, .image-carousel-img  {
     width: 40vw;
-    height: 500px;
+    height: 60vh;
+    object-fit: fill;
 }
 #contacto {
      background-image:url(./images/stars-unplash.jpg);
@@ -195,7 +195,7 @@ body {
 }
 
 #map {
-    width: 50vw;
+    width: 75vw;
 }
 .media-images {
     display:flex;
@@ -290,6 +290,7 @@ footer {
         gap: 30px;
     }
     .menu-img {
+        height: auto;
         width: 80vw;
     }
     .menu-div {
@@ -307,10 +308,6 @@ footer {
     #map {
         width: 80vw;
     }
-    .image-carousel-img {
-        width: 80vw;
-        height: 300px;
-    }
     #logo {
         height: 200px;
     }
@@ -320,5 +317,9 @@ footer {
     }
     .media-text {
         width: 80vw;
+    }
+    .image-carousel-video, .image-carousel-img {
+        height: 25vh;
+        width: 90vw;
     }
 }
