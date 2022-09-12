@@ -1,4 +1,7 @@
 /*"LuffyDrank" Web Developer */
+* {
+    box-sizing: border-box;
+}
 h1 {
     margin: 5px;
 }
@@ -66,7 +69,7 @@ body {
     align-items: center;
     width: 100%;
     object-fit: cover;
-    height: 80vh;
+    height: 100vh;
     background-image: url(./images/burger-unsplashdark.jpg);
     background-size: 100vw 100%;
 }
@@ -102,6 +105,7 @@ body {
     color: white;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
+    width: 1200px;
 }
 #logo {
     height: 150px; 
@@ -120,6 +124,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 75px;
+    align-items: center;
 }
 .menu {
     display:flex;
@@ -136,10 +141,6 @@ body {
     text-align: center;
 }
 
-.media {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 #contacto {
     display:flex;
@@ -185,6 +186,7 @@ body {
 
 .image-carousel-img {
     width: 40vw;
+    height: 500px;
 }
 #contacto {
      background-image:url(./images/stars-unplash.jpg);
@@ -195,9 +197,12 @@ body {
 #map {
     width: 50vw;
 }
-
-video {
-    display: none;
+.media-images {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .media {
     display:flex;
@@ -232,6 +237,20 @@ footer {
 .footer h1 {
     margin: 0px;
 }
+
+#welcome-img2 {
+    display:none
+}
+
+.media-text {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin: 5px;
+    width: 50vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}
 @media only screen and (max-width: 768px) {
     .nav-right {
         display: none;
@@ -243,31 +262,63 @@ footer {
     }
     #welcome-text {
     margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }   
     #welcome {
-        padding: 150px 0px 0px 0px;
+        padding: 170px 0px 0px 0px;
         flex-direction: column;
         height: auto;
     }
     #welcome-img{
+        display:none;
+    }
+    #welcome-img2 {
+        display:block;
         width: 80vw;
-        margin: 0px;
     }
     .acerca-div {
         flex-direction: column;
-        padding: 30px;
+        padding: 20px;
         text-align: center;
+        gap: 5px;
+        width: 80vw;
+    }
+    #acerca {
+        gap: 30px;
     }
     .menu-img {
         width: 80vw;
     }
+    .menu-div {
+        margin: 25px;
+    }
+    #menu {
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
     .contacto-icons {
         flex-direction: column;
+        align-items: flex-start;
     }
     #map {
         width: 80vw;
     }
     .image-carousel-img {
+        width: 80vw;
+        height: 300px;
+    }
+    #logo {
+        height: 200px;
+    }
+    .nav {
+        height: auto;
+        padding: 0px;
+    }
+    .media-text {
         width: 80vw;
     }
 }
