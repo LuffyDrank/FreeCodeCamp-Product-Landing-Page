@@ -66,7 +66,6 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
-    object-fit: cover;
     height: 100vh;
     background-image: url(./images/burger-unsplashdark.jpg);
     background-size: 100vw 100%;
@@ -90,9 +89,9 @@ body {
     border-radius: 5%;
 }
 #welcome-img {
-    width: 40%;
+    width: 50%;
     margin: 50px;
-    border-radius: 5%;
+    border-radius: 10%;
     padding: 20px;
 }
 .acerca-div {
@@ -106,7 +105,7 @@ body {
     max-width: 75vw;
     width: 1200px;
 }
-#logo {
+#header-img {
     height: 150px; 
 }
 .icon {
@@ -133,14 +132,17 @@ body {
     background-size: 100% 100%;
 }
 .menu-img {
-    height: 60vh;
+    width: 100%;
 }
 
 .menu-div {
-    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
     text-align: center;
+    width: 30vw;
 }
-
 
 #contacto {
     display:flex;
@@ -187,6 +189,7 @@ body {
     width: 40vw;
     height: 60vh;
     object-fit: fill;
+    border-radius: 5%;
 }
 #contacto {
      background-image:url(./images/stars-unplash.jpg);
@@ -202,7 +205,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
 .media {
     display:flex;
@@ -277,7 +280,8 @@ footer {
     }
     #welcome-img2 {
         display:block;
-        width: 80vw;
+        width: 80%;
+        border-radius: 10%;
     }
     .acerca-div {
         flex-direction: column;
@@ -290,11 +294,11 @@ footer {
         gap: 30px;
     }
     .menu-img {
-        height: auto;
-        width: 80vw;
+        width: 80%;
     }
     .menu-div {
         margin: 25px;
+        width: 80vw;
     }
     #menu {
         align-items: center;
@@ -308,7 +312,7 @@ footer {
     #map {
         width: 80vw;
     }
-    #logo {
+    #header-img {
         height: 200px;
     }
     .nav {
