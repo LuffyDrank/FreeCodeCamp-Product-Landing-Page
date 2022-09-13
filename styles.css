@@ -189,7 +189,7 @@ body {
 .contacto-icons {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
     background-color: rgba(0, 0, 0, 0.75);
     padding: 25px;
     border-radius: 10px;
@@ -312,7 +312,7 @@ footer {
         gap: 30px;
     }
     .menu-img {
-        width: 80%;
+        width: 100%;
     }
     .menu-div {
         margin: 25px;
