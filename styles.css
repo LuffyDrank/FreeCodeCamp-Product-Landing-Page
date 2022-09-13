@@ -2,6 +2,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    font-size: 18px;
+}
 h1 {
     margin: 5px;
 }
@@ -130,18 +133,30 @@ body {
     justify-content: center;
     background-image:url(./images/table-unplash.jpg);
     background-size: 100% 100%;
+    padding-bottom: 30px;
 }
 .menu-img {
     width: 100%;
+    border-radius: 5% 5% 0% 0%;
 }
 
 .menu-div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px;
+    margin: 30px 50px 50px 0px;
     text-align: center;
     width: 30vw;
+    background-color: #D8DDD6;
+    color: black;
+    border:solid 5px #332E30;
+    border-radius: 5%;
+}
+.menu-div p, h2 {
+    padding: 0px 10px 10px;
+}
+.menu-div h2{
+    margin-bottom: 10px;
 }
 
 #contacto {
@@ -255,6 +270,9 @@ footer {
     background-color: rgba(0, 0, 0, 0.75);
 }
 @media only screen and (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
     .nav-right {
         display: none;
     }
@@ -325,5 +343,10 @@ footer {
     .image-carousel-video, .image-carousel-img {
         height: 25vh;
         width: 90vw;
+    }
+}
+@media only screen and (max-width: 1500px) {
+   html {
+        font-size: 14px;
     }
 }
